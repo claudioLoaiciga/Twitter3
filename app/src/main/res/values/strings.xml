@@ -1,5 +1,5 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Twitter3</string>
-    <string name="twitter_CONSUMER_KEY">mfaXpdLS7LT5UQP76chqi5Uvz</string>
-    <string name="twitter_CONSUMER_SECRET">vQWMI0IDaJ7k8U8v7NxFuTAg9CjS160RDqa1AAmHdwMI7a4lYs</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">NDvcr03jJp6cSmDXPlYHHxmYd</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">TcjVjRCexI3643JyVzebGNU2mN09k0f93MkcBwNMMoYkzxTDkL</string>
 </resources>
