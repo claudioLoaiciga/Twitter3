@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido a la página principal"
-        android:textSize="20dp"
-        tools:layout_marginTop="47dp"
-        tools:layout_below="@id/tv_username"
-        tools:layout_alignStart="@id/tv_username"/>
 
-    <TextView
-        android:id="@+id/tv_username"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
-        android:text=""
-        android:textSize="20dp"/>
-</RelativeLayout>
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tabLayoutId"
+        app:tabTextColor="@color/tabTextColor"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
+        android:background="@color/colorPrimary"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPagerId">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
