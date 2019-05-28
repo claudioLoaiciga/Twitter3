@@ -1,12 +1,9 @@
 package com.example.twitter3;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -26,7 +23,7 @@ public class HomePage extends AppCompatActivity {
         viewPager= (ViewPager)findViewById(R.id.viewPagerId);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());// Me falta de entender bien este metodo
         //aca se llama al metodo addFragment creado en la clase ViewPageAdapters donde se añaden los Fragmentos/Tabs
-        adapter.addFragments(new TimelineFragment(),"TIMELINE");
+        adapter.addFragments(new CollectionTimelineFragment(),"TIMELINE");
         adapter.addFragments(new TweetsFragment(),"TWEETS");
         adapter.addFragments(new DirectMessagesFragments(),"DIRECT MESSAGES");
 
