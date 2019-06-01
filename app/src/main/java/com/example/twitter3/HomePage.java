@@ -19,6 +19,12 @@ public class HomePage extends AppCompatActivity {
 
     private ViewPager viewPager;
 
+
+    public void goFinalActivity(View view) {/// Método que me envía o redirige hacia una vista que maneja una clase
+        Intent intent = new Intent( this, HomePage.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +61,4 @@ public class HomePage extends AppCompatActivity {
 
 
 
-    public void goFinalActivity(View view) {/// Método que me envía o redirige hacia una vista que maneja una clase
-        Intent intent = new Intent( this, HomePage.class);
-        startActivity(intent);
-    }
 }
