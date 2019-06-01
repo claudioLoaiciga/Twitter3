@@ -25,6 +25,18 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void tweets(View view) {/// Método que me envía o redirige hacia una vista que maneja una clase
+        final TwitterSession session = TwitterCore.getInstance().getSessionManager()
+                .getActiveSession();
+        final Intent intent = new ComposerActivity.Builder(this)
+                .session(session)
+                .text(String.valueOf(R.id.button3))
+                .hashtags("#twitter")
+                .createIntent();
+        startActivity(intent);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,16 +59,6 @@ public class HomePage extends AppCompatActivity {
     }
 
 
-    public void tweets(View view) {/// Método que me envía o redirige hacia una vista que maneja una clase
-        final TwitterSession session = TwitterCore.getInstance().getSessionManager()
-                .getActiveSession();
-        final Intent intent = new ComposerActivity.Builder(this)
-                .session(session)
-                .text(String.valueOf(R.id.button3))
-                .hashtags("#twitter")
-                .createIntent();
-        startActivity(intent);
-    }
 
 
 
