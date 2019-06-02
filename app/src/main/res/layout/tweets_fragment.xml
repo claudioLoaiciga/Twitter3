@@ -32,8 +32,8 @@
 
         </LinearLayout>
 
-        <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView"
+        <EditText
+            android:id="@+id/multiText"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:text="What´s Happening?" />
